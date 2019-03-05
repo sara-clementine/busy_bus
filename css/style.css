@@ -12,6 +12,7 @@ nav {
   width: 100%;
   height: 135px;
   position: fixed;
+  z-index: 1;
 }
 
 ul {
@@ -43,7 +44,8 @@ nav h1 {
 .map {
   position: fixed;
   top: 135px;
-  width: 90%;
+  width: 100%;
+  z-index: 1;
 }
 
 .route_header {
@@ -52,6 +54,7 @@ nav h1 {
   background-color: #FF3B30;
   position: fixed;
   top: 350px;
+  z-index: 1;
 }
 
 .route_header li {
@@ -87,6 +90,7 @@ h4 {
 table {
   top: 380px;
   position: relative;
+  margin-bottom: 70px;
 }
 
 th {
@@ -99,13 +103,14 @@ th {
 footer {
   height: 70px;
   background-color: #FF3B30;
-  top: 750px;
+  bottom: 0;
   position: fixed;
-  width: 100%;
+  width: 120%;
 }
 
 footer li {
   display: inline-block;
-  margin-left: 10%;
+  margin-left: 2%;
+  margin-right: 10%;
   margin-top: 3%;
 }
