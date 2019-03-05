@@ -1,5 +1,6 @@
 body {
   background-color: #fff;
+  width: 100%;
 }
 
 *, *:before, *:after {
@@ -42,12 +43,12 @@ nav h1 {
 .map {
   position: fixed;
   top: 135px;
-
+  width: 90%;
 }
 
 .route_header {
   height: 30px;
-  width: 100%;
+  width: 180%;
   background-color: #FF3B30;
   position: fixed;
   top: 350px;
@@ -55,7 +56,7 @@ nav h1 {
 
 .route_header li {
   display: inline-block;
-  margin-left: 2%;
+  margin-left: 1%;
   margin-right: 24%;
   margin-top: 1%;
 }
@@ -81,7 +82,6 @@ h4 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   margin-top: 6%;
-
 }
 
 table {
@@ -91,7 +91,7 @@ table {
 
 th {
   border-bottom: 1px solid #DADADA;
-  width: 70%;
+  width: 65%;
   text-align: left;
   line-height: 20px;
 }
