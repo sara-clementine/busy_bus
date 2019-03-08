@@ -11,57 +11,85 @@
 </head>
 <body>
   <nav>
-    <div class="status_bar">
-      <img src="images/status-bar.png" alt="status_bar" width="100%" height="30px">
-    </div>
+    <section class="status_bar">
+      <img src="images/status-bar.png" alt="status_bar" width="375px" height="35px">
+    </section>
     <ul title="nav_bar">
       <li><img src="images/arrow.png" alt="back_arrow" id="arrow"></li>
       <li><h1>BusyBus</h1></li>
     </ul>
-    <img src="images/Search.png" alt="search_bar" id="search_bar">
+    <br>
+    <form action="/action_page.php" id="search_bar">
+      <input type="text" name="Search-Bar" value="Washington & State">
+      <input type="submit" value="Search">
+  </form>
   </nav>
-  <div class="map">
+  <section class="map">
     <img src="images/map.png" alt="map">
-  </div>
-  <div class="route_header">
+  </section>
+  <section class="route_header">
     <ul title="route_header">
-      <li><h4>BUS LINE</h4></li>
-      <li><h4 id="arrival_time">ARRIVAL TIME</h4></li>
+      <li><h5>BUS LINE</h5></li>
+      <li><h5 id="arrival">ARRIVAL TIME</h5></li>
     </ul>
-  </div>
-  <div class="routes">
+  </section>
+  <section class="routes">
     <table title="routes">
-      <tr><th><h2>Eastbound</h2></th><th></th></tr>
-      <tr><th><h3>60 Randolph/Harbor Dr</h3></th>
-      <th><h3>Every 20 min.</h3></th></tr>
-      <tr><th><h3>124 Navy Pier</h3></th>
-      <th><h3>Every 10 min.</h3></th></tr>
-      <tr><th><h2>Northbound</h2></th><th></th></tr>
-      <tr><th><h3>151 Devon/Clark</h3></th>
-      <th><h3>Every 16 min.</h3></th></tr>
-      <tr><th><h2>Southbound</h2></th><th></th></tr>
-      <tr><th><h3>J14 103rd/Stony Island</h3></th>
-      <th><h3>Every 15 min.</h3></th></tr>
-      <tr><th><h3>124 Navy Pier</h3></th>
-      <th><h3>Every 10 min.</h3></th></tr>
-      <tr><th><h2>Reroute <img src="images/outage.png" alt="outage" width="12px" height="12px"></h2> </th><th></th></tr>
-      <tr><th><h3>6x Jackson Park Express</h3></th>
-      <th><h3>N/A</h3></th></tr>
-      <tr><th><h2>Out of Service <img src="images/outage.png" alt="outage" width="12px" height="12px"></h2></th><th></th></tr>
-      <tr><th><h3>4 Cottage Grove</h3></th>
-      <th><h3>Resumes 12:10 AM</h3></th></tr>
-      <tr><th><h3>20 Madison</h3></th>
-      <th><h3>Resumes 12:10 AM</h3></th></tr>
-      <tr><th><h3>157 Streeterville/Taylor</h3></th>
-      <th><h3>Resumes 6:00 AM</h3></th></tr>
+      <tr class="border direction"><th><h2>Eastbound</h2></th><th></th></tr>
+      <tr><th><h2>60</h2></th>
+        <th><h3>12:00PM</h3></th></tr>
+        <tr class="border"><th><h4>(RANDOLPH/HARBOR DR)</h4></th>
+        <th><h4>Every 20 min.</h4></th></tr>
+      <tr><th><h2>124</h2></th>
+        <th><h3>12:30 PM</h3></th></tr>
+        <tr class="border"><th><h4>(NAVY PIER)</h4></th>
+        <th><h4>Every 10 min.</h4></th></tr>
+      <tr class="border direction"><th><h2>Northbound</h2></th><th></th></tr>
+      <tr><th><h2>151</h2></th>
+        <th><h3>1:00 PM</h3></th></tr>
+        <tr class="border"><th><h4>(DEVON/CLARK)</h4></th>
+        <th><h4>Every 16 min.</h4></th></tr>
+      <tr class="border direction"><th><h2>Southbound</h2></th><th></th></tr>
+      <tr><th><h2>J14 </h2></th>
+        <th><h3>1:30PM</h3></th></tr>
+        <tr class="border"><th><h4>(103RD/STONY ISLAND)</h4></th>
+        <th><h4>Every 15 min.</h4></th></tr>
+      <tr><th><h2>124</h2></th>
+        <th><h3>2:00PM</h3></th></tr>
+        <tr class="border"><th><h4>(NAVY PIER)</h4></th>
+        <th><h4>Every 10 min.</h4></th></tr>
+      <tr class="border direction"><th><h2>Reroute <img src="images/outage.png" alt="outage" width="12px" height="12px"></h2> </th><th></th></tr>
+      <tr><th><h2>6x</h2></th>
+        <th><h3>N/A</h3></th></tr>
+        <tr class="border"><th><h4>(JACKSON PARK EXPRESS)</h4></th>
+        <th><h4>N/A</h4></th></tr>
+      <tr class="border direction"><th><h2>Out of Service <img src="images/outage.png" alt="outage" width="12px" height="12px"></h2></th><th></th></tr>
+      <tr><th><h2>4</h2></th>
+        <th><h3>N/A</h3></th></tr>
+        <tr class="border"><th><h4>(COTTAGE GROVE)</h4></th>
+        <th><h4>Resumes 12:10 AM</h4></th></tr>
+      <tr><th><h2>20</h2></th>
+        <th><h3>N/A</h3></th></tr>
+        <tr class="border"><th><h4>(MADISON)</h4></th>
+        <th><h4>Resumes 12:10 AM</h4></th></tr>
+      <tr><th><h2>157</h2></th>
+        <th><h3>N/A</h3></th></tr>
+        <tr class="border"><th><h4>(STREETERVILLE/TAYLOR)</h4></th>
+        <th><h4>Resumes 6:00 AM</h4></th></tr>
     </table>
-  </div>
+  </section>
   <footer>
-    <ul title="footer">
+    <ul title="footer_img" class="footer_img">
       <li><img src="images/home.png" alt="home"></li>
       <li><img src="images/stops.png" alt="stops"></li>
       <li><img src="images/buses.png" alt="buses"></li>
       <li><img src="images/account.png" alt="account"></li>
+    </ul>
+    <ul title="footer_txt" class="footer_txt">
+      <li><h5>HOME</h5></li>
+      <li><h5>STOPS</h5></li>
+      <li><h5>BUSES</h5></li>
+      <li><h5>ACCOUNT</h5></li>
     </ul>
   </footer>
 </body>
